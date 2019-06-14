@@ -10,6 +10,10 @@ namespace TicTacToe
     {
         static void Main(string[] args)
         {
+            Board board = new Board();
+            board.StartGame(board.CheckAndReturnCorrectInput(Console.ReadLine()));
+
+            Console.ReadKey();            
         }
     }
 }
